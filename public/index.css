@@ -1,0 +1,303 @@
+body {
+  font-family: 'Roboto','Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(90, 90, 90);
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  display: block;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
+}
+
+html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  .app {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    float: center;
+    padding-bottom: 5px;
+  }
+
+  nav ul li {
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .current {
+    border-bottom: 4px solid rgb(255, 255, 255);
+  }
+
+  .ex-img {
+    width: 100%;
+    height: 100%;
+    max-height: 15em;
+    padding-right: -10px;
+    margin-left: -10px;
+    margin-top: -5px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    margin-left: .5em;
+    margin-top: .5em;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 15px;
+    margin-left: 3em;
+    font-size: 22px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-image: url("./jnight.jpg");
+    padding-bottom: 50px;
+    font-weight: bold;
+    text-align: center;
+    width:100%;
+    height:100%;
+    border:solid rgb(255, 255, 255);
+    border-radius: 1px;
+    border-left-style: none;
+    border-right-style: none;
+  }
+
+  .topnav h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 50px;
+    padding-bottom: 10px;
+    
+  }
+
+  .topnav p{
+    margin-left: 2em;
+  }
+
+  .card-body {
+    padding-top: 15em;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;     
+    text-align: center;
+    margin-left: -2em;
+  }
+
+  nav {
+    overflow: hidden;
+  }
+
+  .navbar-left {
+    float: left;
+  }
+
+  .navbar-right {
+    float: right;
+    padding-top: 1em;
+  }
+
+   .home img {
+    position: absolute;
+    background-position: center 120px;
+    width: 100%;
+  }
+
+  .home {
+    width: calc(100%);
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  .social-icon { 
+    width: 15px; 
+    height: 15px; 
+    margin: 0 10px; 
+    align-content: left;
+  }
+
+  .container {
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  margin-left: .5em;
+  }  
+
+  .card-container {
+    margin-bottom: 3rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    width: 400px;    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+  }
+
+  
+  .card {
+    position: relative;
+    padding: 5px 10px;
+    height: 200px;
+    border-radius: 25px 25px 0 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+  }
+  
+
+  .top { 
+    background-color: #717575;
+    position: relative;   
+    display: flex;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+    padding-bottom: 12px;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .image img {
+    border-radius: 10px 10px 0 0;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  .btn {
+    margin: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    text-decoration: none;
+  }
+  
+
+  .bottom {
+    margin-top: 120px;
+  }
+
+  .description {
+   margin-bottom: 15px;
+   margin: 10px;
+   padding-top: 12px;
+   font-size: 20px;
+  }
+
+  .tech {
+    margin-top: 5px;
+    margin: 10px;
+    font-size: 16px;
+    margin-left: 1em;
+  }
+
+@media screen and (max-width: 400px) {
+  .card, .image {
+    width: 275px;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.about {
+  text-align: left;
+}
+
+.about-list {
+  list-style-type: circle; 
+  margin-left: 3em;
+  padding-top: 0.25em;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+li i {
+  font-size: 30px;
+  margin-top: -1em;
+}
+
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.resume {
+  justify-content: center;
+  display: flex;
+}
